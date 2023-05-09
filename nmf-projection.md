@@ -69,7 +69,7 @@ hclustfun=function(x) hclust(x, method="average")
 )
 ```
 
-![CoGAPS Projected Pattern Figure](/images/CoGAPSProjectedPattern.png)
+![CoGAPS Projected Pattern Figure](/images/CoGAPSProjectedPatternFigure.png)
 
 ## Projecting CoGAPS Objects
 
