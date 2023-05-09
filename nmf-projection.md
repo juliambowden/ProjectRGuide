@@ -14,6 +14,7 @@ toc: true
 NMF decomposes a data matrix of D with N genes as rows and M samples as columns, into two matrices, as D AP. The pattern matrix P has rows associated with BPs in samples and the amplitude matrix A has columns indicating the relative association of a given gene, where the total number of BPs (k) is an input parameter. CoGAPS and GWCoGAPS seek a pattern matrix (P) and the corresponding distribution matrix of weights (A) whose product forms a mock data matrix (M) that represents the gene-wise data D within noise limits (ε). That is,
 
 1.
+
 <center>D = M + ε = AP + ε.</center>
 
 <p>
