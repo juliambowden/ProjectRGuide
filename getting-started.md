@@ -37,8 +37,9 @@ The inputs that must be set each time are only data and loadings, with all other
 
 The arguments are as follows:
 
+|                   |                                                                                                                 Arguments                                                                                                                 |
+|-------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | **data**          | a dataset to be projected into the pattern space                                                                                                                                                                                          |
-|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **loadings**      | a matrix of continuous values with unique rownames to be projected                                                                                                                                                                        |
 | **dataNames**     | a vector containing unique names, i.e. gene names, for the rows of the target dataset to be used to match features with the loadings, if not provided by ```rownames(data)```. Order of names in vector must match order of rows in data. |
 | **loadingsNames** | a vector containing unique names, i.e. gene names, for the rows of loadings to be used to match features with the data, if not provided by ```rownames(loadings)```. Order of names in vector must match order of rows in loadings.       |
