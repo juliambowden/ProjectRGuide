@@ -1,0 +1,22 @@
+remote_theme: chrisrhymes/bulma-clean-theme
+
+permalink: pretty
+
+lang: en
+title: projectR
+tagline: projectR Guide
+description: >
+  The website for projectR
+fixed_navbar: top
+favicon:
+
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
