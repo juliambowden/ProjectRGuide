@@ -42,3 +42,12 @@ The arguments are as follows:
 | **loadingsNames** | loadingsNames rownames (e.g. gene names) of the loadings to be matched with dataNames                                 |
 | **NP**            | vector of integers indicating which columns of loadings object to use. The default of NP = NA will use entire matrix. |
 | **full**          | logical indicating whether to return the full model solution. By default only the new pattern object is returned.     |
+
+|                   | Arguments                                                                                                             |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **data**          | a target dataset to be projected into the pattern space                                                               |
+| **loadings**      | a CoGAPSResult object                                                                                                 |
+| **dataNames**     | rownames (e.g. gene names) of the target dataset, if different from existing rownames of data                         |
+| **loadingsNames** | loadingsNames rownames (e.g. gene names) of the loadings to be matched with dataNames                                 |
+| **NP**            | vector of integers indicating which columns of loadings object to use. The default of NP = NA will use entire matrix. |
+| **full**          | logical indicating whether to return the full model solution. By default only the new pattern object is returned.     |
