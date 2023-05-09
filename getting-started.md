@@ -36,8 +36,20 @@ The inputs that must be set each time are only data and loadings, with all other
 
 The arguments are as follows:
 
-**```data```** a dataset to be projected into the pattern space
+**data** a dataset to be projected into the pattern space
 
-**```loadings```** a matrix of continuous values with unique rownames to be projected 
+**loadings** a matrix of continuous values with unique rownames to be projected 
 
-**```dataNames```** a vector containing unique names, i.e. gene names, for the rows of the target dataset to be used to match features with the loadings, if not provided by ```rownames(data)```. Order of names in vector must match order of rows in data.
+**dataNames** a vector containing unique names, i.e. gene names, for the rows of the target dataset to be used to match features with the loadings, if not provided by ```rownames(data)```. Order of names in vector must match order of rows in data.
+
+**loadingsNames** a vector containing unique names, i.e. gene names, for the rows of loadings to be used to match features with the data, if not provided by ```rownames(loadings)```. Order of names in vector must match order of rows in loadings.
+
+**NP** vector of integers indicating which columns of loadings object to use. The default of NP = NA will use entire matrix.
+
+**full** logical indicating whether to return the full model solution. By default only the new pattern object is returned.
+
+The ```loadings``` argument in the generic projectR function is suitable for use with any general feature space, or set of feature spaces, whose rows annotation links them to the data to be projected. Ex: the coefficients associated with individual genes as the result of regression analysis or the amplituded values of individual genes as the result of non-negative matrix factorization (NMF).
+
+### Output
+
+The basic output of the base projectR function, i.e. ```full=FALSE```, returns ```projectionPatterns``` representing relative weights for the samples from the new data in this previously defined feature space, or set of feature spaces. The full output of the base projectR function, i.e. ```full=TRUE```, returns ```projectionFit```, a list containing ```projectionPatterns``` and ```Projection```. The ```Projection``` object contains additional information from the procedure used to obtain the ```projectionPatterns```. For the base projectR function, ```Projection``` is the full lmFit model from the package <a href="https://bioconductor.org/packages/3.17/bioc/html/limma.html" taregt="_blank"><em>limma</em></a>.
