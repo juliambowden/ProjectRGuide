@@ -1,0 +1,15 @@
+- name: Getting Started
+  link: /getting-started/
+- name: PCA Projection
+  link: /pca-projection/
+- name: NMF Projection
+  link: /nmf-projection/
+- name: Clustering Projection
+  link: /clustering-projection/
+- name: Correlation Based Projection
+  link: /correlation-based-projection/
+- name: FAQ
+  link: /faq/
+#   dropdown: 
+#     - name: Page 2
+#       link: /page-2/
