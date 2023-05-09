@@ -28,7 +28,7 @@ projectR(data, loadings,dataNames = NULL, loadingsNames = NULL,
 NP = NA, full = FALSE)
 ```
 
-## Input Arguments
+### Input Arguments
 
 The inputs that must be set each time are only the data and patterns, with all other inputs having default values. However, inconguities between gene names–rownames of the loadings object and either rownames of the data object will throw errors and, subsequently, should be checked before running.
 
@@ -43,11 +43,11 @@ The arguments are as follows:
 | **NP**            | vector of integers indicating which columns of loadings object to use. The default of NP = NA will use entire matrix. |
 | **full**          | logical indicating whether to return the full model solution. By default only the new pattern object is returned.     |
 
-## Output
+### Output
 
 The basic output of the base projectR function, i.e. ```full=FALSE```, returns ```projectionPatterns``` representing relative weights for the samples from the new data in this previously defined feature space, or set of feature spaces. The full output of the base projectR function, i.e. ```full=TRUE```, returns ```projectionFit```, a list containing ```projectionPatterns``` and ```Projection```. The ```Projection``` object contains additional information from the proceedure used to obtain the ```projectionPatterns```. For the the the base projectR function, ```Projection``` is the full lmFit model from the package <a href="https://bioconductor.org/packages/3.17/bioc/html/limma.html" target="_blank">*limma*</a>.
 
-# Obtaining CoGAPS Patterns to Project
+## Obtaining CoGAPS Patterns to Project
 
 ```r
 # get data
@@ -70,7 +70,7 @@ hclustfun=function(x) hclust(x, method="average")
 
 ![CoGAPS Projected Pattern Figure](/images/CoGAPSProjectedPattern.png)
 
-# Projecting CoGAPS Objects
+## Projecting CoGAPS Objects
 
 ```r
 # data to project into PCs from RNAseq6l3c3t expression data
