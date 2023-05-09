@@ -15,7 +15,7 @@ NMF decomposes a data matrix of D with N genes as rows and M samples as columns,
 the amplitude matrix A has columns indicating the relative association of a given gene, where the total number of BPs (k) is an input parameter. CoGAPS and GWCoGAPS seek a pattern
 matrix (P) and the corresponding distribution matrix of weights (A) whose product forms a mock data matrix (M) that represents the gene-wise data D within noise limits (ε). That is,
 
-D = M + ε = AP + ε.
+<center>D = M + ε = AP + ε.</center>
 
 The number of rows in P (columns in A) defines the number of biological patterns (k) that CoGAPS/GWCoGAPS will infer from the number of nonorthogonal basis vectors required
 to span the data space. As in the Bayesian Decomposition algorithm Wang, Kossenkov, and Ochs (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-7-175" target="_blank">2006</a>), the matrices A and P in CoGAPS are assumed to have the atomic prior
